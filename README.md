@@ -34,7 +34,7 @@ CSV with the following columns:
 
   <br>
 
-## Create_dictionary.ipynb <br>
+## Preparing_Input_Data.ipynb <br>
 <br>
 This output Cleaned_data.csv is ready to be converted to the format required by spaCy for input, e.g. 
 <br>
