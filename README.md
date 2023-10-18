@@ -34,5 +34,5 @@ This CSV is ready to be convert to the spaCy binary format required for input, e
 {'label': 'SKILL', 'points': {'text': 'pandas', 'start': 36, 'end': 42}} <br>
 {'label': 'SKILL', 'points': {'text': 'numpy', 'start': 43, 'end': 48}} <br>
 
-
+This can be done using the notebook Create_dictionary.ipynb
 
