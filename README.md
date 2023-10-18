@@ -10,8 +10,11 @@ Package requirements (and versions used): <br>
 This code cleans and prepares the Resume Dataset from Kaggle (https://www.kaggle.com/datasets/gauravduttakiit/resume-dataset), combined with the job skills dataset (https://www.kaggle.com/datasets/maneeshdisodia/employment-skills) in order to produce a dataset for training a custom NER (Named Entity Recognition) model to tag job skills in CVs and job descriptions.
 
 This code performs the following steps:<br>
+<br>
 Cleaning:<br>
 * Removing unwanted and special characters e.g. non-ascii characterrs, bullet points, \n, \r, etc.<br>
+
+
 Annotations: <br>
 * NER training datasets require annotations of the locations of the skills in the text - as it would be labour-intensive to tag these manaually (which would be the optimal solution), a list of employment skills from the Kaggle dataset (originating from LinkedIn) is used to search and annotate these words in the text <br>
 * Some of these skills are multiple words <br>
@@ -19,6 +22,7 @@ Annotations: <br>
 * The original text before these edits is then put into the cleaned dataset, to preserve the cases and spaces <br>
 
 Output: <br>
+ <br>
 CSV with the following columns:
 * Category (Type of job)
 * Resume (original text)
