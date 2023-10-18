@@ -2,10 +2,10 @@
 Custom NER Model Technical Assignment Task
 
 Package requirements (and versions used): <br>
-Python <br>
-Pandas <br>
-Numpy <br>
-Matplotlib <br>
+Python 3.8.18 <br>
+Pandas 2.0.3 <br>
+Numpy 1.23.5 <br>
+Matplotlib 3.7.2 <br>
 
 This code cleans and prepares the Resume Dataset from Kaggle (https://www.kaggle.com/datasets/gauravduttakiit/resume-dataset), combined with the job skills dataset (https://www.kaggle.com/datasets/maneeshdisodia/employment-skills) in order to produce a dataset for training a custom NER (Named Entity Recognition) model to tag job skills in CVs and job descriptions.
 
