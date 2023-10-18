@@ -9,6 +9,8 @@ Package requirements (and versions used): <br>
 
 This code cleans and prepares the Resume Dataset from Kaggle (https://www.kaggle.com/datasets/gauravduttakiit/resume-dataset), combined with the job skills dataset (https://www.kaggle.com/datasets/maneeshdisodia/employment-skills) in order to produce a dataset for training a custom NER (Named Entity Recognition) model to tag job skills in CVs and job descriptions.
 
+## Data_Preparation_EleonoraParrag.ipynb <br>
+
 This code performs the following steps:<br>
 <br>
 Cleaning:<br>
@@ -31,14 +33,16 @@ CSV with the following columns:
 * skill_words (list of skill words in the text)
 
   <br>
-This CSV is ready to be convert to the spaCy binary format required for input, e.g. 
 
+## Create_dictionary.ipynb <br>
+<br>
+This output Cleaned_data.csv is ready to be converted to the format required by spaCy for input, e.g. 
+<br>
 {'label': 'SKILL', 'points': {'text': 'programming_languages', 'start': 7, 'end': 28}} <br>
 {'label': 'SKILL', 'points': {'text': 'python', 'start': 29, 'end': 35}} <br>
 {'label': 'SKILL', 'points': {'text': 'pandas', 'start': 36, 'end': 42}} <br>
 {'label': 'SKILL', 'points': {'text': 'numpy', 'start': 43, 'end': 48}} <br>
-
-This can be done using the notebook Create_dictionary.ipynb <br>
-
-Unfortunately when you save an array in Python it converts it to a string, therefore this notebook also contains code to run when you read in the array, to fix it
+<br>
+This notebook reads in the Cleaned_data.csv and performs some formatting corrections (unfortunately when you save an array in Python it converts it to a string) <br>
+Additionally, this code contains a function to convert a row of the dataframe into a dictionary ready for spaCy
 
