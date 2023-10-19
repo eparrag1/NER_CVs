@@ -20,7 +20,7 @@ Cleaning:<br>
 Annotations: <br>
 * NER training datasets require annotations of the locations of the skills in the text - as it would be labour-intensive to tag these manaually (which would be the optimal solution), a list of employment skills from the Kaggle dataset (originating from LinkedIn) is used to search and annotate these words in the text <br>
 * Some of these skills are multiple words <br>
-* The search is done on all lowercase text with multiple word skills as appearing on the skills list are combined with an underscore, e.g. natural_language_processing <br>
+* The search is done on all lowercase text with multiple word skills (as appearing on the skills list) combined with an underscore, e.g. natural_language_processing <br>
 * The original text before these edits is then put into the cleaned dataset, to preserve the cases and spaces <br>
 
 Output: <br>
@@ -38,9 +38,9 @@ CSV with the following columns:
 <br>
 This output Cleaned_data.csv is ready to be converted to the format required by spaCy for input, e.g. 
 <br>
-{'label': 'SKILL', 'points': {'text': 'programming_languages', 'start': 7, 'end': 28}} <br>
+{'label': 'SKILL', 'points': {'text': 'Programming Languages', 'start': 7, 'end': 28}} <br>
 {'label': 'SKILL', 'points': {'text': 'python', 'start': 29, 'end': 35}} <br>
-{'label': 'SKILL', 'points': {'text': 'pandas', 'start': 36, 'end': 42}} <br>
+{'label': 'SKILL', 'points': {'text': 'Pandas', 'start': 36, 'end': 42}} <br>
 {'label': 'SKILL', 'points': {'text': 'numpy', 'start': 43, 'end': 48}} <br>
 <br>
 This notebook reads in the Cleaned_data.csv and performs some formatting corrections (unfortunately when you save an array in Python it converts it to a string) <br>
