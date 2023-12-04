@@ -1,4 +1,4 @@
-# Custom NER Model Technical Assignment Task
+# Custom NER Model Creation
 
 Package requirements (and versions used): <br>
 * Python 3.8.18 <br>
