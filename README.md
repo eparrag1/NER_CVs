@@ -43,5 +43,7 @@ This output Cleaned_data.csv is ready to be converted to the format required by 
 {'label': 'SKILL', 'points': {'text': 'numpy', 'start': 43, 'end': 48}} <br>
 <br>
 This notebook reads in the Cleaned_data.csv and performs some formatting corrections (unfortunately when you save an array in Python it converts it to a string) <br>
-Additionally, this code contains a function to convert a row of the dataframe into a dictionary ready for spaCy
+Additionally, this code contains a function to convert a row of the dataframe into a dictionary ready for spaCy. <br>
+It then makes this format conversion and trains an initial spaCy model. Testing and model refinement to follow <br>
+
 
