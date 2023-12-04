@@ -1,4 +1,3 @@
-# RoleMapper
 # Custom NER Model Technical Assignment Task
 
 Package requirements (and versions used): <br>
